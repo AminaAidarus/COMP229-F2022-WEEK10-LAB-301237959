@@ -35,7 +35,7 @@
          <ng-container *ngIf="isLoggedIn else showLoginTemplate"    >
 
           <li class="nav-item">
-            <a class="nav-link" routerLink="logout" aria-current="page" href="/logout"><i class="fa-solid fa-right-from-bracket fa-lg"></i> Logout</a>
+            <a class="nav-link" routerLink="logout" aria-current="page" href="/logout" (click)="logout()"><i class="fa-solid fa-right-from-bracket fa-lg"></i> Logout</a>
           </li>
           </ng-container>
           <ng-template #showLoginTemplate>
